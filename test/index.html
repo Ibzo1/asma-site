@@ -85,11 +85,11 @@
       <h1>Join the testers</h1>
       <ol class="how">
         <li>Tap <b>Join the testers</b> below. Google Groups opens.</li>
-        <li>If Google asks you to sign in, choose the Google account your Play Store uses.</li>
+        <li>If Google asks you to sign in, use the Google account your Play Store uses.</li>
         <li>Tap <b>Join group</b>. If a box opens, tap <b>Join group</b> again.</li>
         <li>Come back to this page. Step 2 will be waiting.</li>
       </ol>
-      <a class="go" href="https://accounts.google.com/ServiceLogin?passive=true&amp;continue=https%3A%2F%2Fgroups.google.com%2Fg%2Fasma-testers" data-next="step2">Join the testers</a>
+      <a class="go" href="https://accounts.google.com/ServiceLogin?passive=true&amp;continue=https%3A%2F%2Fgroups.google.com%2Fg%2Fasma-testers" target="_blank" rel="noopener" data-next="step2">Join the testers</a>
       <button class="skip" data-show="step2">I've joined</button>
     </section>
 
@@ -103,7 +103,7 @@
         <li>Open Asma. Pro is on for your first two weeks.</li>
       </ol>
       <p class="hint">If Play says the app isn't available, wait a few minutes and try again.</p>
-      <a class="go" href="https://play.google.com/apps/testing/asma.app.android" data-next="done">Become a tester</a>
+      <a class="go" href="https://play.google.com/apps/testing/asma.app.android" target="_blank" rel="noopener" data-next="done">Become a tester</a>
       <button class="skip" data-show="step1">Back to step 1</button>
     </section>
 
@@ -120,7 +120,8 @@
 </main>
 
 <script>
-  // One step on screen at a time. After a step's button is tapped, the next step is waiting when they come back.
+  // One step on screen at a time. Each step's button opens Google in a new tab, so this page stays where it was,
+  // and the next step is already showing when they come back to it.
   const read = () => { try { return localStorage.getItem('asma-test-step') || 'step1'; } catch { return 'step1'; } };
   const save = (s) => { try { localStorage.setItem('asma-test-step', s); } catch {} };
   function show(id) {
