@@ -46,6 +46,7 @@
   }
   ol.how b, .what b { color: var(--ink); }
   .hint { color: var(--soft); font-size: 0.88em; text-align: center; margin: 0 0 clamp(0.9rem, 2.2vh, 1.5rem); }
+  .hint a { color: var(--pale); }
   a.go {
     display: block; text-align: center; text-decoration: none; font-weight: 700; font-size: 1.08em;
     padding: clamp(0.95rem, 2.4vh, 1.35rem) 1rem; border-radius: 1rem; background: var(--pale); color: var(--navy);
@@ -86,7 +87,7 @@
       <ol class="how">
         <li>Tap <b>Join the testers</b> below. Google Groups opens.</li>
         <li>If Google asks you to sign in, use the Google account your Play Store uses.</li>
-        <li>Tap <b>Join group</b>. If a box opens, tap <b>Join group</b> again.</li>
+        <li>Tap <b>Join group</b>. A box asks how you'd like emails: choose <b>Each email</b>, so we can tell you the moment Asma is ready for you. Then tap <b>Join group</b> in the box.</li>
         <li>Come back to this page. Step 2 will be waiting.</li>
       </ol>
       <a class="go" href="https://accounts.google.com/ServiceLogin?passive=true&amp;continue=https%3A%2F%2Fgroups.google.com%2Fg%2Fasma-testers" target="_blank" rel="noopener" data-next="step2">Join the testers</a>
@@ -102,7 +103,7 @@
         <li>Tap <b>Download it on Google Play</b>, then <b>Install</b>.</li>
         <li>Open Asma. Pro is on for your first two weeks.</li>
       </ol>
-      <p class="hint">If Play says the app isn't available, wait a few minutes and try again.</p>
+      <p class="hint">If Play shows a blank page or says the app isn't available, Google hasn't let you in yet. That can take a while after joining, and we'll email you when it's ready. Skipped step 1? <a href="https://accounts.google.com/ServiceLogin?passive=true&amp;continue=https%3A%2F%2Fgroups.google.com%2Fg%2Fasma-testers" target="_blank" rel="noopener">Join the group</a> with the Google account your Play Store uses.</p>
       <a class="go" href="https://play.google.com/apps/testing/asma.app.android" target="_blank" rel="noopener" data-next="done">Become a tester</a>
       <button class="skip" data-show="step1">Back to step 1</button>
     </section>
@@ -112,6 +113,8 @@
       <h1>Thank you</h1>
       <p class="what">Asma Pro is yours free for <b>two weeks</b> from when you first open the app. After that, Asma goes back to the free version. You're never charged unless you choose to buy Pro yourself.</p>
       <p class="what">Please keep Asma on your phone for those two weeks. Google counts the days, and Asma can only go on the Play Store once 12 people have.</p>
+      <p class="what">Didn't get to install it? Google can take a while to let new testers in. We'll email you when Asma is ready, or tap below later.</p>
+      <a class="go" href="https://play.google.com/store/apps/details?id=asma.app.android" target="_blank" rel="noopener">Open Asma in Google Play</a>
       <button class="skip" data-show="step2">Not installed yet?</button>
     </section>
   </div>
